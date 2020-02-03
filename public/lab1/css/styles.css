@@ -38,3 +38,7 @@ footer {
 #logo {
     width: 140px;
 }
+
+#current {
+    color: yellow;
+}
