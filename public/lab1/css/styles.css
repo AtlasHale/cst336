@@ -27,8 +27,14 @@ nav a:hover {
 
 footer {
     clear: left;
+    size: 1.5em;
+    color: #002a4e;
 }
 
 #disclaimer, #logo {
     float: left;
+}
+
+#logo {
+    width: 140px;
 }
