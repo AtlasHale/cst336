@@ -46,8 +46,36 @@
             resetButton.style.display= 'none';
             
             function check(){
-                alert('I am a function');
+                var userGuess = Number(guessField.value);
+                if(guessCount === 1){
+                    guesses.innerHTML = 'Previous Guesses: ';
+                }
+                guesses.innerHTML += userGuess + ' ';
+                if (userGuess === randomNumber){
+                    lastResult.innerHTML = 'Congratulations! You got it right!';
+                    lastResult.style.backgroundColor = 'green';
+                    lowOrHigh.innerHTML = '';
+                    setGameOver();
+                } else if (guessCount === 7){
+                    lastResult.innerHTML = 'Sorry, you lost!';
+                    setGameOver();
+                } else {
+                    lastResult.innerHTML = 'Wrong!';
+                    lastResult.style.backgroundColor = 'red';
+                    if (userGuess < randomNumber) {
+                        lowOrHigh.innerHTML = 'Last guess was too low!'; 
+                    } else if (userGuess > randomNumber) {
+                        lowOrHigh.innerHTML = 'Last guess was too high!';
+                    }
+                }
+                
+                guessCount++;
+                guessField.value = '';
+                guessField.focus();
             }
+            
+            guessSubmit.addEventListener('click', check);
+            
             
         </script>
     </body>
