@@ -20,6 +20,7 @@
         
         <div id="directions">
             Guess a number between 1 and 99 in seven attempts!
+            </br>
             <label for="guessField">Enter a guess: </label>
             </br></br>
 
@@ -33,8 +34,6 @@
         </div>
         <script>
             var randomNumber = Math.floor(Math.random()*99)+1;
-            console.log(randomNumber);
-            document.getElementById("numberToGuess").innerHTML = randomNumber;
             var guesses = document.querySelector('#guesses');
             var lastResult = document.querySelector('#lastResult');
             var lowOrHigh = document.querySelector('#lowOrHigh');
