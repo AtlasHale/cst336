@@ -18,7 +18,7 @@
             <h1>Guess a Number</h1>
         </div>
         
-        <div id="directions">
+        <div id="directions" class="resultParas">
             Guess a number between 1 and 99 in seven attempts!
             </br>
             <label for="guessField">Enter a guess: </label>
@@ -32,49 +32,6 @@
             <p id="lowOrHigh"></p>
             <button id="reset">Reset</button>
         </div>
-        <script>
-            var randomNumber = Math.floor(Math.random()*99)+1;
-            var guesses = document.querySelector('#guesses');
-            var lastResult = document.querySelector('#lastResult');
-            var lowOrHigh = document.querySelector('#lowOrHigh');
-            var guessSubmit = document.querySelector('.guessSubmit');
-            var guessField = document.querySelector('.guessField');
-            var guessCount = 1;
-            var resetButton = document.querySelector('#reset');
-            resetButton.style.display= 'none';
-            
-            function check(){
-                var userGuess = Number(guessField.value);
-                if(guessCount === 1){
-                    guesses.innerHTML = 'Previous Guesses: ';
-                }
-                guesses.innerHTML += userGuess + ' ';
-                if (userGuess === randomNumber){
-                    lastResult.innerHTML = 'Congratulations! You got it right!';
-                    lastResult.style.backgroundColor = 'green';
-                    lowOrHigh.innerHTML = '';
-                    setGameOver();
-                } else if (guessCount === 7){
-                    lastResult.innerHTML = 'Sorry, you lost!';
-                    setGameOver();
-                } else {
-                    lastResult.innerHTML = 'Wrong!';
-                    lastResult.style.backgroundColor = 'red';
-                    if (userGuess < randomNumber) {
-                        lowOrHigh.innerHTML = 'Last guess was too low!'; 
-                    } else if (userGuess > randomNumber) {
-                        lowOrHigh.innerHTML = 'Last guess was too high!';
-                    }
-                }
-                
-                guessCount++;
-                guessField.value = '';
-                guessField.focus();
-            }
-            
-            guessSubmit.addEventListener('click', check);
-            
-            
-        </script>
+        <script SRC="js/functions.js"></script>
     </body>
 </html>
