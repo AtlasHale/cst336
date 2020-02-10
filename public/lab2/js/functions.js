@@ -11,7 +11,12 @@ resetButton.style.display= 'none';
 function check(){
     var userGuess = Number(guessField.value);
     if(guessCount === 1){
-        guesses.innerHTML = 'Previous Guesses: ';
+        guessField.value = '';
+        guessField.focus();
+        return;
+    }
+    if(userGuess > 99){
+        alert('Please choose a number ranging from 1 to 99!');
     }
     guesses.innerHTML += userGuess + ' ';
     if (userGuess === randomNumber){
