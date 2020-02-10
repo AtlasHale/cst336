@@ -5,6 +5,11 @@ var lowOrHigh = document.querySelector('#lowOrHigh');
 var guessSubmit = document.querySelector('.guessSubmit');
 var guessField = document.querySelector('.guessField');
 var guessCount = 1;
+var gamesWon = 0;
+var gamesLost = 0;
+document.getElementById("gameWon").innerHTML = gamesWon;
+document.getElementById("gameLost").innerHTML = gamesLost;
+
 var resetButton = document.querySelector('#reset');
 resetButton.style.display= 'none';
 
@@ -24,9 +29,13 @@ function check(){
         lastResult.innerHTML = 'Congratulations! You got it right!';
         lastResult.style.backgroundColor = 'green';
         lowOrHigh.innerHTML = '';
+        gamesWon++;
+        document.getElementById("gameWon").innerHTML = gamesWon;
         setGameOver();
     } else if (guessCount === 7){
         lastResult.innerHTML = 'Sorry, you lost!';
+        gamesLost++;
+        document.getElementById("gameLost").innerHTML = gamesLost;
         setGameOver();
     } else {
         lastResult.innerHTML = 'Wrong!';

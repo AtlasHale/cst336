@@ -17,15 +17,18 @@
         <div class="jumbotron">
             <h1>Lets Play A Guessing Game</h1>
         </div>
-        
+        <div>
+            Games Won: <span id="gameWon"></span></br>
+            Games Lost: <span id="gameLost"></span></br>
+        </div>
         <div id="directions" class="resultParas">
             Guess a number between 1 and 99 in seven attempts!
             </br>
             <label for="guessField">Enter a guess: </label>
-            </br></br>
-
+            </br>
             <input type="text" id="guessField" class="guessField">
             <input type="submit" value="Submit guess" class="guessSubmit">
+
             </br></br>
             <p id="guesses"></p>
             <p id="lastResult"></p>
