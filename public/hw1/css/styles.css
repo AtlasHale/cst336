@@ -1,9 +1,9 @@
 body {
-    background-color: black;
-    color: gray;
+    background-image: linear-gradient(#768db3,  #0040ab, #01050d);
+    color: white;
 }
 
-header, main, nav, footer {
+header, nav, footer {
     text-align: center;
 }
 
@@ -37,28 +37,7 @@ footer {
 }
 
 #current {
-    color: yellow;
-}
-
-table {
-    margin: 0px auto;
-}
-
-td {
-    padding-right: 10px;
-    font-size: 1.3em;
-}
-
-td strong{
-    color: orange;
-}
-
-#table-header {
-    background-color: #351a00;
-}
-
-.table-row {
-    background-color: #753900;
+    color: black;
 }
 
 ul {
@@ -66,17 +45,51 @@ ul {
     padding-left: 200px;
 }
 
-.hobby {
-    color: yellow;
-}
-
-#mainwrapper {
-    width: 70%;
-    margin: 0 auto;
-}
-
 h1 {
-    font-family: 'Pacifico', cursive;
     font-size: 4em;
     margin-bottom: 0px;
+}
+
+.banner-home {
+    background-image: url("../img/dark.jpg");
+    height: 60vh;
+    position: relative;
+    background-size: cover;
+}
+
+.banner-nn {
+    background-image: url("../img/nn.jpeg");
+    height: 80vh;
+    position: relative;
+    background-size: cover;
+}
+
+.banner-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+}
+
+.container {
+  column-count: 1;
+  height: 400px;
+  padding-top: 50px;
+  background-color: transparent;
+}
+
+.body-text{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+footer {
+    clear: left;
+    size: 1.5em;
+    width: 100%;
+    color: white;
 }
