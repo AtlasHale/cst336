@@ -75,10 +75,10 @@ h1 {
 }
 
 .container {
-  column-count: 1;
-  height: 400px;
-  padding-top: 50px;
-  background-color: transparent;
+    column-count: 1;
+    height: 320px;
+    padding-top: 40px;
+    background-color: transparent;
 }
 
 .body-text{
@@ -92,4 +92,9 @@ footer {
     size: 1.5em;
     width: 100%;
     color: white;
+}
+
+.top-bar {
+    border-top: 1px solid red;
+    width: 50%;
 }
