@@ -71,6 +71,13 @@ h1 {
     background-size: cover;
 }
 
+.banner-nlp {
+    background-image: url("../img/nlp.png");
+    height: 80vh;
+    position: relative;
+    background-size: cover;
+}
+
 .banner-text {
     text-align: center;
     position: absolute;
