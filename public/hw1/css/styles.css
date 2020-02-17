@@ -64,6 +64,13 @@ h1 {
     background-size: cover;
 }
 
+.banner-conv {
+    background-image: url("../img/conv.jpeg");
+    height: 80vh;
+    position: relative;
+    background-size: cover;
+}
+
 .banner-text {
     text-align: center;
     position: absolute;
