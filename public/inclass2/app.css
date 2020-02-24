@@ -8,8 +8,10 @@ img {
 }
 
 .result-class {
-	border: 2px solid #5d98fc;
+	border-top: 2px solid #5d98fc;
+	border-left: 2px solid #5d98fc;
 	text-align: justify;
+	margin-top: 20px;
 	margin-bottom: 20px;
 	padding: 20px;
 }

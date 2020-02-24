@@ -6,23 +6,24 @@ queryTodos.on("click", function(){
     type: "GET",
     dataType: "json",
     success: function(data) {
-        console.log(data)
         var falseRadio = $("input[id='falseRadio']:checked").val();
-        console.log(falseRadio);
         var trueRadio = $("input[id='trueRadio']:checked").val();
-        console.log(trueRadio);
+        $("#results").addClass("result-class")
+        if(falseRadio == "on"){
+            $("#results").html("<h5>Completed Todos: False<h5>");
+        }
+        else if(trueRadio == "on"){
+            $("#results").html("<h5>Completed Todos: True</h5>");
+        }
         $.each(data, function( key, value) {
           if(value.completed == false && falseRadio == "on"){
             console.log(value.title);
-            $("#results").html("Completed Todos: False");
-            $("#results").append("value.title");
+            $("#results").append(value.title);
             $("#results").append("<br/>");
-            $("#results").addClass("result-class")
           }
           else if(value.completed == true && trueRadio == "on"){
             console.log(value.title + value.completed);
-            $("#results").html("Completed Todos: False");
-            $("#results").append("value.title");
+            $("#results").append(value.title);
             $("#results").append("<br/>");
           }
         });
