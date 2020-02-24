@@ -86,8 +86,9 @@
                 }
                 else{
                     $("#totalScore").css("color", "green");
+                    $("#totalScore").append("<br>Congratulations! You scored 80 or above!<br>")
+
                 }
-                $("#totalScore").append("<br>Congratulations! You scored 80 or above!<br>")
                 $("#totalAttempts").html(`Total Attempts: ${++attempts}`);
                 localStorage.setItem("total_attempts", attempts);
            }
