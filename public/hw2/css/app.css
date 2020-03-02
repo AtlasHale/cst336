@@ -27,3 +27,34 @@
   background-image: url('../img/card.jpg');
   background-repeat: repeat;
 }
+
+.error{
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.bal {
+    background-color: white;
+    color: green;
+    font-size: 30px;
+}
+
+.bal-div{
+    display: inline-block;
+}
+
+.winner {
+    color: green;
+    font-size: 50px;
+}
+
+.loser{
+    color: white;
+    font-size: 30px;
+}
+
+footer{
+    color: grey;
+    text-align: center;
+}
