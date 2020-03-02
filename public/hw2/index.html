@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Hangman</title>
+    <link href="css/app.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="app.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+    </head>
+
+    <body class="text-center">
+        <h1 class="top-banner top">Lets Play Slots!</h1>
+        <div class="bkgrd">
+            <div class="rules">
+                The rules are simple, if you get 3 in a row, you get 5x your bet!<br>
+                If you get all 9, its a jackpot and you get 20x your bet!<br>
+                Enter an amount to gamble, then click the lever to spin!<br>
+            </div>
+            <br>
+            <input type="number" id="user-input">
+            <br>
+            <div class="row">
+                <div class="column">
+                    <img src="slots/win.png" id="slot-machine">
+                </div>
+                <div class="column">
+                    <input type="image" src="img/spin.png" name="spin" id="spin" />
+                </div>
+            </div>
+            <p id="balance"></p>
+        </div>
+    </body>
+    
+    <script type="text/javascript" src="js/app.js"></script>
+
+</html>
