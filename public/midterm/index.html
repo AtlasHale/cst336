@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><!---What shows on the tab---></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--External Stylesheet link-->
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<!--Bootstrap CDN link-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<!--JQuery CDN link-->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<h1>Random Dog Gallery</h1>
+			<p>Please enter the number of random images you'd like to generate</p>
+			<form action="/" method="post" onsubmit="buildGallery(); return false;">
+				<div class="form-group row">
+					<label for="number-images" class="col-sm-2 col-form-label">Number of Images</label>
+					<div class="col-sm-4">
+						<input type="text" class="form-control" id="number-images" placeholder="0" required>
+					</div>
+					<div class="col-sm-6">
+						<button type="submit" class="btn btn-primary">Generate</button>
+					</div>
+				</div>
+			</form>
+		</div>	
+		<div class="flex-container" id="images"></div>
+	</div>
+	<!--External Javascript link-->
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
