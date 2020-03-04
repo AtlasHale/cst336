@@ -9,9 +9,10 @@
 	flex-direction: row;
 }
 
+/*width of flex items controls how many per row*/
 .flex-item {
-	width: 30%;
-	margin: 10px;
+	width: 50%;
+	margin: 0px;
 }
 
 .flex-item > img {
